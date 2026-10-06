@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=Syed%20Taha%20Manzar&fontSize=44&fontColor=39D353&fontAlignY=32&desc=Aspiring%20Full-Stack%20AI%20Engineer&descAlignY=52&descSize=18&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:0D1117,100:1B4332&height=200&section=header&text=Syed%20Taha%20Manzar&fontSize=42&fontColor=39D353&fontAlignY=35&desc=Aspiring%20Full-Stack%20AI%20Engineer&descAlignY=55&descSize=16&animation=fadeIn" width="100%"/>
 
 <img src="https://raw.githubusercontent.com/tahamat1c/tahamat1c/main/assets/profile.png" width="150" alt="Profile" />
 
@@ -40,9 +40,7 @@
 ---
 
 <!-- ═══════════════════════════════════════════════════════════ -->
-
 <!--                    FEATURED ACHIEVEMENT                     -->
-
 <!-- ═══════════════════════════════════════════════════════════ -->
 
 <div align="center">
@@ -51,7 +49,7 @@
 
 ### 🚀 Alibaba Cloud AI Hackathon Pakistan 2026
 
-**WattWise AI-Powered Energy Intelligence Platform**
+**WattWise — AI-Powered Energy Intelligence Platform**
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2200&pause=700&color=39D353&vCenter=true&width=700&lines=Selected+from+3%2C000%2B+teams+%F0%9F%8F%86;Shortlisted+among+hundreds+of+teams+%F0%9F%8E%AF;Advanced+to+Technical+Evaluation+at+NASTP+%E2%9A%A1" alt="Alibaba Cloud AI Hackathon Achievement" />
 
@@ -85,7 +83,6 @@ The platform combines **machine learning-based consumption forecasting** with **
 </div>
 
 ---
-
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!--                       ABOUT ME                              -->
@@ -126,8 +123,8 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![PydanticAI](https://img.shields.io/badge/PydanticAI-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 
 </div>
 </details>
@@ -141,7 +138,6 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
@@ -211,10 +207,7 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 <div align="center">
 
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
 </div>
 </details>
@@ -318,21 +311,7 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=tahamat1c&theme=matrix&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=6&row=2" width="100%" />
-
-</div>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--                  CONTRIBUTION STREAK                        -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-## 🔥 Contribution Streak
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=tahamat1c&theme=github-dark-blue&hide_border=true&background=0D1117&ring=39D353&fire=FF6B00&currStreakLabel=39D353&border_radius=10" width="100%" />
+<img src="https://github-profile-trophy.vercel.app/?username=tahamat1c&theme=matrix&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4&row=2" width="100%" />
 
 </div>
 
@@ -347,20 +326,6 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 <div align="center">
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" width="100%" />
-
-</div>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--                   SPOTIFY / NOW PLAYING                     -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-## 🎧 Currently Vibing To
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2500&pause=700&color=39D353&center=false&vCenter=true&width=500&lines=Code+%7C+Game+%7C+Repeat+%F0%9F%8E%AE;Gamer+%7C+Tinkerer+%7C+Lifelong+Learner;Always+Building+Something+New+%F0%9F%9A%80" alt="Vibing" />
 
 </div>
 
@@ -394,7 +359,7 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=140&section=footer&text=Thanks%20for%20Stopping%20By!&fontSize=24&fontColor=39D353&fontAlignY=65&animation=twinkling" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1B4332,50:0D1117,100:0A0A0A&height=140&section=footer&text=Thanks%20for%20Stopping%20By!&fontSize=24&fontColor=39D353&fontAlignY=65&animation=twinkling" width="100%" />
 
 <br/>
 
