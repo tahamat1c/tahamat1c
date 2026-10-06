@@ -6,7 +6,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:0D1117,100:1B4332&height=200&section=header&text=Syed%20Taha%20Manzar&fontSize=42&fontColor=39D353&fontAlignY=35&desc=Aspiring%20Full-Stack%20AI%20Engineer&descAlignY=55&descSize=16&animation=fadeIn" width="100%"/>
 
-<img src="https://raw.githubusercontent.com/tahamat1c/tahamat1c/main/assets/profile.png" width="150" alt="Profile" />
+<img src="https://avatars.githubusercontent.com/u/194960986?v=4" width="150" alt="Profile" />
 
 <br/>
 
