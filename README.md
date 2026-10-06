@@ -271,19 +271,6 @@ Beyond tech, I'm a **gamer and lifelong tinkerer**. Competitive games, immersive
 
 </div>
 
----
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--              CONTRIBUTION ACTIVITY GRAPH                    -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-## 📈 Contribution Activity Graph
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=tahamat1c&bg_color=0D1117&color=39D353&line=39D353&point=FFFFFF&area=true&area_color=39D353&hide_border=true&custom_title=Syed%20Taha%20Manzar's%20Contribution%20Graph&radius=10" width="100%" />
-
-</div>
 
 ---
 
@@ -341,21 +328,6 @@ Beyond tech, I'm a **gamer and lifelong tinkerer**. Competitive games, immersive
 
 </div>
 
----
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--                    GITHUB TROPHIES                          -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=tahamat1c&theme=matrix&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=4&row=2" width="100%" />
-
-</div>
-
----
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!--                    RANDOM DEV QUOTE                         -->
