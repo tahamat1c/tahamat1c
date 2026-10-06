@@ -1,22 +1,23 @@
+<div align="center">
+
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!--                    ANIMATED HEADER                          -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:0D1117,100:1B4332&height=240&section=header&text=Syed%20Taha%20Manzar&fontSize=48&fontColor=39D353&fontAlignY=32&desc=Aspiring%20Full-Stack%20AI%20Engineer&descAlignY=55&descSize=16&animation=fadeIn" width="100%"/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:0D1117,100:1B4332&height=200&section=header&text=Syed%20Taha%20Manzar&fontSize=42&fontColor=39D353&fontAlignY=35&desc=Aspiring%20Full-Stack%20AI%20Engineer&descAlignY=55&descSize=16&animation=fadeIn" width="100%"/>
+<!-- Profile Avatar with pulse ring -->
+<img src="https://avatars.githubusercontent.com/u/194960986?v=4" width="160" alt="Profile" />
 
-<img src="https://avatars.githubusercontent.com/u/194960986?v=4" width="150" alt="Profile" />
+<br/><br/>
 
-<br/>
+<!-- Animated typing line -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=800&color=39D353&center=true&vCenter=true&width=700&lines=Hey%2C+I'm+Syed+Taha+Manzar+%F0%9F%91%8B;Building+Scalable+AI+Systems+%E2%9A%A1;RAG+%2B+FastAPI+%2B+Full-Stack+%F0%9F%9A%80;Turning+Ideas+Into+Intelligent+Apps+%F0%9F%8C%9F" alt="Typing SVG" />
+</p>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=700&color=39D353&vCenter=true&width=750&lines=Hi%2C+I'm+Syed+Taha+Manzar+%F0%9F%91%8B;Aspiring+Full-Stack+AI+Engineer+%F0%9F%A4%96;Building+RAG+%2B+FastAPI+Systems+%E2%9A%A1;Turning+Ideas+Into+Intelligent+Apps+%F0%9F%9A%80;Welcome+to+My+GitHub+Profile+%F0%9F%8C%9F" alt="Typing SVG" />
-
-<br/>
-
-### 🚀 Aspiring Full-Stack AI Engineer
-
-<p><i>Building intelligent systems from the ground up.</i></p>
+<!-- Tagline -->
+<p><i>Building intelligent systems from the ground up. 🚀</i></p>
 
 <!-- Social Badges -->
 <p>
@@ -28,7 +29,7 @@
 <a href="mailto:syedtahamanzar307@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
-<!-- Profile Views + Followers -->
+<!-- Stats Badges -->
 <p>
 <img src="https://komarev.com/ghpvc/?username=tahamat1c&color=39D353&style=for-the-badge&label=PROFILE+VIEWS" />
 <img src="https://img.shields.io/github/followers/tahamat1c?color=39D353&style=for-the-badge&logo=github&label=FOLLOWERS" />
@@ -36,6 +37,58 @@
 </p>
 
 </div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--                       HERO INTRO                            -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+## 👋 Hey, I'm Syed Taha Manzar
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2500&pause=700&color=39D353&center=true&vCenter=true&width=800&lines=Aspiring+Full-Stack+AI+Engineer+%F0%9F%A4%96;Building+scalable+backends+with+FastAPI+%E2%9A%99%EF%B8%8F;Crafting+RAG+pipelines+%2B+AI+workflows+%F0%9F%A7%A0;Full-stack+from+database+to+UI+%F0%9F%8E%A8" alt="Hero Typing" />
+</p>
+
+I'm an aspiring **Full-Stack AI Engineer** who loves turning rough ideas into working, end-to-end products. My sweet spot is where **AI, backend engineering, and clean frontends** meet — from intelligent APIs and RAG pipelines to polished full-stack apps.
+
+I don't just want AI to be a bolt-on feature. I want it to be **part of how the system thinks, reasons, and solves problems.**
+
+**Still learning. Still experimenting. Still building. 🚀**
+
+---
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--                    BUILDING SCALABLE SECTION                -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+## ⚡ Building Scalable Systems
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2600&pause=800&color=39D353&center=true&vCenter=true&width=800&lines=Architecture+that+scales+%F0%9F%8F%97%EF%B8%8F;Backends+built+to+last+%E2%9A%99%EF%B8%8F;AI+that+actually+ships+%F0%9F%9A%80;Code+that+stays+maintainable+%F0%9F%A7%B9" alt="Building Scalable Typing" />
+
+</div>
+
+I focus on designing systems that don't just work in a demo — they **work in the real world**. That means clean architecture, sensible separation of concerns, and choices that hold up when traffic, data, and complexity grow.
+
+### 🏗️ How I Think About Scale
+
+| Layer | Approach |
+|-------|----------|
+| **Backend** | FastAPI with async-first design, clean routers, Pydantic validation |
+| **AI Layer** | RAG pipelines, vector search, model-agnostic integrations |
+| **Data** | PostgreSQL for reliability, Redis for speed, proper indexing |
+| **Frontend** | Next.js + React, component-driven, type-safe with TypeScript |
+| **DevOps** | Dockerized, CI/CD via GitHub Actions, deploy anywhere |
+
+### 🎯 Core Principles
+
+- **Modular by default** — if it's hard to test, it's hard to scale
+- **AI as a first-class citizen** — not a sidecar, not a gimmick
+- **Type safety end-to-end** — Pydantic on the backend, TypeScript on the front
+- **Ship small, ship often** — iterate fast, break less
+- **Readable > clever** — future-me should thank present-me
 
 ---
 
@@ -51,7 +104,7 @@
 
 **WattWise — AI-Powered Energy Intelligence Platform**
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2200&pause=700&color=39D353&vCenter=true&width=700&lines=Selected+from+3%2C000%2B+projects+%F0%9F%8F%86;Shortlisted+among+hundreds+of+teams+%F0%9F%8E%AF;Advanced+to+Technical+Evaluation+at+NASTP+%E2%9A%A1" alt="Alibaba Cloud AI Hackathon Achievement" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2200&pause=700&color=39D353&center=true&vCenter=true&width=700&lines=Selected+from+3%2C000%2B+projects+%F0%9F%8F%86;Shortlisted+among+hundreds+of+teams+%F0%9F%8E%AF;Advanced+to+Technical+Evaluation+at+NASTP+%E2%9A%A1" alt="Hackathon Achievement" />
 
 </div>
 
@@ -62,13 +115,11 @@ WattWise was developed for the **Alibaba Cloud AI Hackathon Pakistan 2026**, whe
 * 🥇 **Selected from 3,000+ Projects**
 * 🎯 **Shortlisted among hundreds of teams**
 * ⚡ **Advanced to the Technical Evaluation round at NASTP**
-* 🔍 Presented the solution for a **technical deep-dive and evaluation by industry professionals**
+* 🔍 Presented the solution for a **technical deep-dive with industry professionals**
 
 ### 💡 About WattWise
 
-**WattWise** is an AI-powered energy intelligence platform that helps users understand electricity consumption, estimate costs, forecast future usage, and make smarter energy decisions.
-
-The platform combines **machine learning-based consumption forecasting** with **AI-driven recommendations** to turn simple meter readings into meaningful insights for energy budgeting and savings.
+**WattWise** is an AI-powered energy intelligence platform that helps users understand electricity consumption, estimate costs, forecast future usage, and make smarter energy decisions. It combines **ML-based consumption forecasting** with **AI-driven recommendations** — turning simple meter readings into real insights for budgeting and savings.
 
 ### 🛠️ Technology
 
@@ -88,19 +139,13 @@ The platform combines **machine learning-based consumption forecasting** with **
 <!--                       ABOUT ME                              -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-## 👨‍💻 About Me
+## 🧑‍💻 About Me
 
-Hey! I'm **Taha** an aspiring **Full-Stack AI Engineer** fascinated by the intersection of Artificial Intelligence and software engineering. I enjoy taking ideas that start as a rough concept and turning them into practical, end-to-end systems — from intelligent backends and AI-powered workflows to polished full-stack applications.
+I'm driven by **curiosity**. I like going beneath the surface to understand how things work, why they work, and what happens when they don't. Most of my learning comes from experimenting, breaking things, debugging the mess, and rebuilding them better.
 
-My current focus is **AI Engineering, Machine Learning, FastAPI, RAG, and modern full-stack development**. I'm particularly interested in building systems where AI isn't just a feature, but actually contributes to how the application works, reasons, and solves problems. I also enjoy working across the stack, because understanding how the frontend, backend, database, APIs, and AI layer connect makes the whole engineering process more interesting.
+I work across the **full stack** because understanding how the frontend, backend, database, APIs, and AI layer connect makes engineering more interesting — and the products more coherent.
 
-What drives me most is curiosity. I like going beneath the surface to understand **how things work, why they work, and what happens when they don't**. A lot of my learning comes from experimenting with new technologies, taking things apart, breaking them, debugging the mess, and eventually putting them back together in a better way.
-
-I'm constantly exploring new ideas, working on projects, and pushing myself to turn what I learn into something tangible. For me, every project is an opportunity to learn something new — whether it's a better way to structure a backend, integrate an AI model, design a RAG pipeline, or simply write cleaner and more reliable code.
-
-Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive games, immersive single-player worlds, and anything that gives me an excuse to explore how things work under the hood.
-
-**Still learning. Still experimenting. Still building. 🚀**
+Beyond tech, I'm a **gamer and lifelong tinkerer**. Competitive games, immersive single-player worlds, and anything that gives me an excuse to open the hood.
 
 ---
 
@@ -136,7 +181,6 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-
 
 </div>
 </details>
@@ -238,7 +282,7 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=tahamat1c&bg_color=0D1117&color=39D353&line=39D353&point=FFFFFF&area=true&area_color=39D353&hide_border=true&custom_title=Taha's%20Contribution%20Graph&radius=10" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=tahamat1c&bg_color=0D1117&color=39D353&line=39D353&point=FFFFFF&area=true&area_color=39D353&hide_border=true&custom_title=Syed%20Taha%20Manzar's%20Contribution%20Graph&radius=10" width="100%" />
 
 </div>
 
@@ -269,7 +313,7 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 ---
 
 <!-- ═══════════════════════════════════════════════════════════ -->
-<!--                   ISO CALENDAR (BONUS)                      -->
+<!--                   CONTRIBUTION CALENDAR                     -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
 ## 📅 Contribution Calendar
@@ -344,7 +388,7 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=1000&color=39D353&center=false&vCenter=true&width=600&lines=Thanks+for+visiting+my+profile+%F0%9F%99%8C;Let's+build+something+amazing+together+%F0%9F%9A%80;Star+%E2%AD%90+some+repos+if+you+like+them+%F0%9F%98%84" alt="Thanks" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=1000&color=39D353&center=true&vCenter=true&width=600&lines=Thanks+for+visiting+my+profile+%F0%9F%99%8C;Let's+build+something+amazing+together+%F0%9F%9A%80;Star+%E2%AD%90+some+repos+if+you+like+them+%F0%9F%98%84" alt="Thanks" />
 
 </div>
 
