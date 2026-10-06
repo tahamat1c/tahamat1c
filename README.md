@@ -51,7 +51,7 @@
 
 **WattWise — AI-Powered Energy Intelligence Platform**
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2200&pause=700&color=39D353&vCenter=true&width=700&lines=Selected+from+3%2C000%2B+teams+%F0%9F%8F%86;Shortlisted+among+hundreds+of+teams+%F0%9F%8E%AF;Advanced+to+Technical+Evaluation+at+NASTP+%E2%9A%A1" alt="Alibaba Cloud AI Hackathon Achievement" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2200&pause=700&color=39D353&vCenter=true&width=700&lines=Selected+from+3%2C000%2B+projects+%F0%9F%8F%86;Shortlisted+among+hundreds+of+teams+%F0%9F%8E%AF;Advanced+to+Technical+Evaluation+at+NASTP+%E2%9A%A1" alt="Alibaba Cloud AI Hackathon Achievement" />
 
 </div>
 
@@ -117,12 +117,9 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![PydanticAI](https://img.shields.io/badge/PydanticAI-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 
@@ -139,7 +136,7 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
 
 </div>
 </details>
@@ -194,7 +191,6 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 
 </div>
@@ -208,6 +204,7 @@ Beyond technology, I'm a **gamer and lifelong tinkerer**. I enjoy competitive ga
 
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 </div>
 </details>
