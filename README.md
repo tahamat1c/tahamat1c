@@ -4,7 +4,7 @@
 <!--                    ANIMATED HEADER                          -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:0D1117,100:1B4332&height=240&section=header&text=Syed%20Taha%20Manzar&fontSize=48&fontColor=39D353&fontAlignY=32&desc=Aspiring%20Full-Stack%20AI%20Engineer&descAlignY=55&descSize=16&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0A0A,50:0D1117,100:1B4332&height=240&section=header&text=WELCOME%20TO%20MY%20PROFILE&fontSize=48&fontColor=39D353&fontAlignY=45&animation=fadeIn" width="100%"/>
 
 <!-- Profile Avatar with pulse ring -->
 <img src="https://avatars.githubusercontent.com/u/194960986?v=4" width="160" alt="Profile" />
@@ -216,7 +216,6 @@ Beyond tech, I'm a **gamer and lifelong tinkerer**. Competitive games, immersive
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![MSSQL](https://img.shields.io/badge/MSSQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 
 </div>
 </details>
