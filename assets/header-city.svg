@@ -1,127 +1,154 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#05000d"/>
-      <stop offset=".55" stop-color="#1a0536"/>
-      <stop offset="1" stop-color="#4a0a5e"/>
-    </linearGradient>
-    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffb000"/>
-      <stop offset="1" stop-color="#ff2bd6"/>
-    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#1b2a4a"/>
+      <stop offset=".55" stop-color="#0d1420"/>
+      <stop offset="1" stop-color="#05080f"/>
+    </radialGradient>
     <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00f0ff"/>
-      <stop offset=".5" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#ff2bd6"/>
+      <stop offset="0" stop-color="#39d353"/>
+      <stop offset=".5" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#bc8cff"/>
     </linearGradient>
-    <pattern id="wc" width="14" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="6" height="7" fill="#00f0ff"/></pattern>
-    <pattern id="wm" width="14" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="6" height="7" fill="#ff2bd6"/></pattern>
-    <pattern id="wy" width="14" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="6" height="7" fill="#ffe600"/></pattern>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
+    <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#39d353" stop-opacity="0"/>
+      <stop offset="1" stop-color="#39d353" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#bc8cff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="strongGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#39d353" opacity=".12"/>
+    </pattern>
   </defs>
 
-  <!-- SKY -->
-  <rect width="900" height="340" fill="url(#sky)"/>
+  <!-- BACKGROUND -->
+  <rect width="900" height="360" fill="url(#bgGlow)"/>
+  <rect width="900" height="360" fill="url(#dotGrid)"/>
 
-  <!-- STARS (native opacity animation) -->
-  <g fill="#fff">
-    <circle cx="60" cy="30" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="140" cy="75" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="1s" repeatCount="indefinite"/></circle>
-    <circle cx="230" cy="25" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="2s" repeatCount="indefinite"/></circle>
-    <circle cx="330" cy="58" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin=".5s" repeatCount="indefinite"/></circle>
-    <circle cx="520" cy="28" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="1.5s" repeatCount="indefinite"/></circle>
-    <circle cx="600" cy="72" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="700" cy="35" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin=".8s" repeatCount="indefinite"/></circle>
-    <circle cx="790" cy="60" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="1.8s" repeatCount="indefinite"/></circle>
-    <circle cx="860" cy="25" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="2.2s" repeatCount="indefinite"/></circle>
+  <!-- AURORA GLOW BLOBS (behind everything) -->
+  <g opacity=".55">
+    <circle cx="180" cy="120" r="140" fill="#39d353" opacity=".08" filter="url(#strongGlow)">
+      <animate attributeName="opacity" values=".05;.14;.05" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="90" r="160" fill="#58a6ff" opacity=".08" filter="url(#strongGlow)">
+      <animate attributeName="opacity" values=".14;.05;.14" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="200" r="180" fill="#bc8cff" opacity=".06" filter="url(#strongGlow)">
+      <animate attributeName="opacity" values=".06;.12;.06" dur="10s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <!-- RETRO SUN (behind name, subtle) -->
-  <circle cx="450" cy="205" r="70" fill="url(#sun)" opacity=".85"/>
-  <rect x="380" y="228" width="140" height="3" fill="#2a0845"/>
-  <rect x="380" y="240" width="140" height="4" fill="#2a0845"/>
-  <rect x="380" y="252" width="140" height="5" fill="#2a0845"/>
-
-  <!-- FAR SKYLINE -->
-  <g fill="#14002b">
-    <rect x="0"   y="184" width="84"  height="156"/>
-    <rect x="84"  y="152" width="70"  height="188"/>
-    <rect x="154" y="200" width="98"  height="140"/>
-    <rect x="252" y="136" width="70"  height="204"/>
-    <rect x="322" y="184" width="84"  height="156"/>
-    <rect x="406" y="168" width="98"  height="172"/>
-    <rect x="504" y="200" width="70"  height="140"/>
-    <rect x="574" y="152" width="84"  height="188"/>
-    <rect x="658" y="184" width="98"  height="156"/>
-    <rect x="756" y="168" width="70"  height="172"/>
-    <rect x="826" y="200" width="74"  height="140"/>
+  <!-- FLOATING PARTICLES -->
+  <g fill="#39d353">
+    <circle cx="80"  cy="60" r="1.6"><animate attributeName="cy" values="60;40;60" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.2" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="160" cy="220" r="1.4"><animate attributeName="cy" values="220;200;220" dur="7s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.2" dur="7s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="40" r="1.8"><animate attributeName="cy" values="40;20;40" dur="5s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.2" dur="5s" begin="2s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="300" r="1.5"><animate attributeName="cy" values="300;280;300" dur="8s" begin=".5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.2" dur="8s" begin=".5s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="50" r="1.7"><animate attributeName="cy" values="50;30;50" dur="6.5s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.2" dur="6.5s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="240" r="1.3"><animate attributeName="cy" values="240;220;240" dur="7.5s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.2" dur="7.5s" begin="3s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="80" r="1.6"><animate attributeName="cy" values="80;60;80" dur="6s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.2" dur="6s" begin="2.5s" repeatCount="indefinite"/></circle>
+  </g>
+  <g fill="#58a6ff">
+    <circle cx="240" cy="140" r="1.2"><animate attributeName="opacity" values=".3;1;.3" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="540" cy="180" r="1.2"><animate attributeName="opacity" values=".3;1;.3" dur="5s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="680" cy="120" r="1.2"><animate attributeName="opacity" values=".3;1;.3" dur="4.5s" begin="2s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- NEAR BUILDINGS (neon outline) -->
-  <g fill="#0b0018" stroke-width="1.5">
-    <rect x="28"  y="216" width="70" height="124" stroke="#00f0ff"/>
-    <rect x="182" y="120" width="84" height="220" stroke="#ff2bd6"/>
-    <rect x="350" y="104" width="70" height="236" stroke="#00f0ff"/>
-    <rect x="462" y="184" width="98" height="156" stroke="#ff2bd6"/>
-    <rect x="616" y="136" width="84" height="204" stroke="#00f0ff"/>
-    <rect x="770" y="200" width="70" height="140" stroke="#ff2bd6"/>
+  <!-- HORIZON GLOW -->
+  <ellipse cx="450" cy="250" rx="420" ry="60" fill="url(#sunGrad)" opacity=".5"/>
+
+  <!-- PERSPECTIVE GRID (synthwave floor) -->
+  <g stroke="#39d353" stroke-width="1" opacity=".35" fill="none">
+    <!-- horizontal lines (perspective) -->
+    <line x1="0" y1="250" x2="900" y2="250" opacity=".6"/>
+    <line x1="0" y1="265" x2="900" y2="265" opacity=".5"/>
+    <line x1="0" y1="285" x2="900" y2="285" opacity=".4"/>
+    <line x1="0" y1="310" x2="900" y2="310" opacity=".3"/>
+    <line x1="0" y1="340" x2="900" y2="340" opacity=".2"/>
+    <!-- vertical lines (converging to center) -->
+    <line x1="450" y1="250" x2="0"   y2="360"/>
+    <line x1="450" y1="250" x2="150" y2="360"/>
+    <line x1="450" y1="250" x2="300" y2="360"/>
+    <line x1="450" y1="250" x2="450" y2="360"/>
+    <line x1="450" y1="250" x2="600" y2="360"/>
+    <line x1="450" y1="250" x2="750" y2="360"/>
+    <line x1="450" y1="250" x2="900" y2="360"/>
   </g>
 
-  <!-- WINDOWS (blinking) -->
-  <g>
-    <rect x="28"  y="232" width="70" height="80"  fill="url(#wc)"><animate attributeName="opacity" values=".25;1;.25" dur="4s" repeatCount="indefinite"/></rect>
-    <rect x="182" y="136" width="84" height="176" fill="url(#wm)"><animate attributeName="opacity" values=".25;1;.25" dur="5s" begin="1s" repeatCount="indefinite"/></rect>
-    <rect x="350" y="120" width="70" height="192" fill="url(#wy)"><animate attributeName="opacity" values=".25;1;.25" dur="3.5s" begin="2s" repeatCount="indefinite"/></rect>
-    <rect x="462" y="200" width="98" height="112" fill="url(#wc)"><animate attributeName="opacity" values=".25;1;.25" dur="5s" begin="1s" repeatCount="indefinite"/></rect>
-    <rect x="616" y="152" width="84" height="160" fill="url(#wm)"><animate attributeName="opacity" values=".25;1;.25" dur="4s" repeatCount="indefinite"/></rect>
-    <rect x="770" y="216" width="70" height="96"  fill="url(#wy)"><animate attributeName="opacity" values=".25;1;.25" dur="3.5s" begin="2s" repeatCount="indefinite"/></rect>
-  </g>
-
-  <!-- ANTENNAS -->
-  <line x1="224" y1="120" x2="224" y2="90" stroke="#ff2bd6" stroke-width="2"/>
-  <circle cx="224" cy="88" r="3" fill="#ff2bd6" filter="url(#glow)"><animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/></circle>
-  <line x1="385" y1="104" x2="385" y2="76" stroke="#00f0ff" stroke-width="2"/>
-  <circle cx="385" cy="74" r="3" fill="#00f0ff" filter="url(#glow)"><animate attributeName="opacity" values="1;.2;1" dur="2.5s" begin=".5s" repeatCount="indefinite"/></circle>
-
-  <!-- WATTWISE NEON SIGN (building pe) -->
-  <text x="511" y="197" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" font-weight="800" fill="#ffe600" filter="url(#glow)" letter-spacing="1">WATTWISE</text>
-
-  <!-- FLYING CAR -->
-  <g>
-    <rect x="0" y="123" width="22" height="6" rx="3" fill="#ffe600" filter="url(#glow)">
-      <animateTransform attributeName="transform" type="translate" from="-80 0" to="980 0" dur="9s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-
-  <!-- FLOATING TAGS -->
-  <g font-family="'Courier New',monospace" font-size="12" font-weight="700" fill="#00f0ff">
-    <text x="40" y="86" opacity=".9">[ FastAPI ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" repeatCount="indefinite"/></text>
-    <text x="140" y="70" fill="#ff2bd6" opacity=".9">[ RAG ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" begin="1s" repeatCount="indefinite"/></text>
-    <text x="560" y="70" opacity=".9">[ PydanticAI ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" begin="2s" repeatCount="indefinite"/></text>
-    <text x="700" y="86" fill="#ff2bd6" opacity=".9">[ Next.js ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" begin=".5s" repeatCount="indefinite"/></text>
-    <text x="790" y="70" text-anchor="end" opacity=".9">[ PostgreSQL ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" begin="1.5s" repeatCount="indefinite"/></text>
-  </g>
-
-  <!-- NAME (gradient + subtle flicker, no layout shift) -->
-  <text x="450" y="72" text-anchor="middle" font-family="'Courier New',monospace" font-size="42" font-weight="800" letter-spacing="6" fill="url(#nameGrad)" filter="url(#glow)">
-    HEY, I'M SYED TAHA MANZAR
-  </text>
-
-  <!-- ROLE (typing-like via opacity sequence, safe) -->
-  <text x="450" y="110" text-anchor="middle" font-family="'Courier New',monospace" font-size="17" font-weight="700" fill="#00f0ff" letter-spacing="3">
-    ASPIRING FULL-STACK AI ENGINEER
-    <animate attributeName="opacity" values="1;1;.85;1" dur="3s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- GROUND LINE -->
-  <rect y="328" width="900" height="12" fill="#0a0014"/>
-  <line x1="0" y1="328" x2="900" y2="328" stroke="#ff2bd6" stroke-width="2" filter="url(#glow)"/>
-
-  <!-- SCANLINE (native translate) -->
-  <rect width="900" height="6" fill="#00f0ff" opacity=".06">
-    <animateTransform attributeName="transform" type="translate" from="0 -10" to="0 340" dur="4s" repeatCount="indefinite"/>
+  <!-- GRID PULSE (animated scanline across grid) -->
+  <rect x="0" y="250" width="900" height="2" fill="#39d353" opacity=".6" filter="url(#softGlow)">
+    <animate attributeName="y" values="250;360;250" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".6;0;.6" dur="6s" repeatCount="indefinite"/>
   </rect>
+
+  <!-- BUILDINGS (dark silhouette with neon edge) -->
+  <g>
+    <!-- far layer -->
+    <g fill="#0b1420" opacity=".9">
+      <rect x="40"  y="170" width="60" height="80"/>
+      <rect x="120" y="140" width="50" height="110"/>
+      <rect x="200" y="160" width="70" height="90"/>
+      <rect x="290" y="120" width="45" height="130"/>
+      <rect x="360" y="150" width="60" height="100"/>
+      <rect x="480" y="130" width="55" height="120"/>
+      <rect x="560" y="160" width="70" height="90"/>
+      <rect x="650" y="140" width="50" height="110"/>
+      <rect x="720" y="165" width="65" height="85"/>
+      <rect x="800" y="145" width="55" height="105"/>
+    </g>
+    <!-- near layer with neon top edges -->
+    <g fill="#0d1117" stroke-width="1.5">
+      <rect x="70"  y="200" width="55" height="50" stroke="#39d353"/>
+      <rect x="230" y="185" width="60" height="65" stroke="#58a6ff"/>
+      <rect x="400" y="175" width="50" height="75" stroke="#bc8cff"/>
+      <rect x="530" y="190" width="65" height="60" stroke="#39d353"/>
+      <rect x="700" y="195" width="55" height="55" stroke="#58a6ff"/>
+    </g>
+    <!-- window dots (blinking) -->
+    <g fill="#39d353">
+      <circle cx="85"  cy="215" r="1.5"><animate attributeName="opacity" values=".2;1;.2" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="100" cy="230" r="1.5"><animate attributeName="opacity" values=".2;1;.2" dur="4s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="245" cy="200" r="1.5"><animate attributeName="opacity" values=".2;1;.2" dur="3.5s" begin=".5s" repeatCount="indefinite"/></circle>
+      <circle cx="265" cy="220" r="1.5"><animate attributeName="opacity" values=".2;1;.2" dur="4.5s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="415" cy="195" r="1.5" fill="#bc8cff"><animate attributeName="opacity" values=".2;1;.2" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="425" cy="215" r="1.5" fill="#bc8cff"><animate attributeName="opacity" values=".2;1;.2" dur="3s" begin="2s" repeatCount="indefinite"/></circle>
+      <circle cx="550" cy="210" r="1.5"><animate attributeName="opacity" values=".2;1;.2" dur="3.5s" begin=".8s" repeatCount="indefinite"/></circle>
+      <circle cx="575" cy="225" r="1.5"><animate attributeName="opacity" values=".2;1;.2" dur="4s" begin="1.8s" repeatCount="indefinite"/></circle>
+      <circle cx="715" cy="210" r="1.5" fill="#58a6ff"><animate attributeName="opacity" values=".2;1;.2" dur="3s" begin="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="735" cy="230" r="1.5" fill="#58a6ff"><animate attributeName="opacity" values=".2;1;.2" dur="4.5s" begin=".3s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+
+  <!-- NAME + ROLE (top, clear) -->
+  <text x="450" y="70" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-size="38" font-weight="800" letter-spacing="1" fill="url(#nameGrad)" filter="url(#softGlow)">
+    Hey, I'm Syed Taha Manzar
+  </text>
+  <text x="450" y="108" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" font-weight="600" letter-spacing="4" fill="#58a6ff" opacity=".9">
+    ASPIRING FULL-STACK AI ENGINEER
+    <animate attributeName="opacity" values=".9;.5;.9" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- UNDERLINE ACCENT (animated width) -->
+  <rect x="300" y="122" width="300" height="2" fill="#39d353" filter="url(#softGlow)">
+    <animate attributeName="width" values="0;300;300;0" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="450;300;300;450" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- FLOATING TECH TAGS (subtle, sides) -->
+  <g font-family="'Courier New',monospace" font-size="11" font-weight="700">
+    <text x="60"  y="145" fill="#39d353" opacity=".7">[ FastAPI ]<animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="6s" repeatCount="indefinite"/></text>
+    <text x="70"  y="175" fill="#58a6ff" opacity=".6">[ RAG ]<animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="7s" begin="1s" repeatCount="indefinite"/></text>
+    <text x="800" y="145" fill="#bc8cff" opacity=".7" text-anchor="end">[ Next.js ]<animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="6.5s" begin=".5s" repeatCount="indefinite"/></text>
+    <text x="800" y="175" fill="#39d353" opacity=".6" text-anchor="end">[ PydanticAI ]<animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="7.5s" begin="2s" repeatCount="indefinite"/></text>
+  </g>
 </svg>
