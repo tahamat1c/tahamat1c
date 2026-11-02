@@ -1,8 +1,6 @@
 <div align="center">
 
-  <img src="assets/header-city.svg" width="100%" />
-  <img src="assets/tags.svg" width="100%" />
-  <img src="assets/achievement.svg" width="100%" />
+
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!--                    ANIMATED HEADER                          -->
