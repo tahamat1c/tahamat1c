@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="50" viewBox="0 0 900 50">
+  <defs>
+    <g id="set">
+      <g class="c"><rect x="10"  y="10" width="87"  height="30" rx="6"/><text x="53.5"  y="30">FASTAPI</text></g>
+      <g class="m"><rect x="113" y="10" width="51"  height="30" rx="6"/><text x="138.5" y="30">RAG</text></g>
+      <g class="c"><rect x="180" y="10" width="87"  height="30" rx="6"/><text x="223.5" y="30">NEXT.JS</text></g>
+      <g class="m"><rect x="283" y="10" width="114" height="30" rx="6"/><text x="340"   y="30">PYDANTICAI</text></g>
+      <g class="c"><rect x="413" y="10" width="114" height="30" rx="6"/><text x="470"   y="30">POSTGRESQL</text></g>
+      <g class="m"><rect x="543" y="10" width="78"  height="30" rx="6"/><text x="582"   y="30">DOCKER</text></g>
+      <g class="c"><rect x="637" y="10" width="78"  height="30" rx="6"/><text x="676"   y="30">PYTHON</text></g>
+      <g class="m"><rect x="731" y="10" width="114" height="30" rx="6"/><text x="788"   y="30">TYPESCRIPT</text></g>
+    </g>
+  </defs>
+  <style>
+    rect{fill:#0a0014;stroke-width:1.5}
+    text{font:700 14px 'Courier New',monospace;text-anchor:middle}
+    .c rect{stroke:#00f0ff}.c text{fill:#00f0ff}
+    .m rect{stroke:#ff2bd6}.m text{fill:#ff2bd6}
+    .run{animation:run 18s linear infinite}
+    @keyframes run{to{transform:translateX(-861px)}}
+  </style>
+  <g class="run">
+    <use href="#set"/>
+    <use href="#set" x="861"/>
+  </g>
+</svg>
