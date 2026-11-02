@@ -1,26 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="50" viewBox="0 0 900 50">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="60" viewBox="0 0 900 60">
   <defs>
     <g id="set">
-      <g class="c"><rect x="10"  y="10" width="87"  height="30" rx="6"/><text x="53.5"  y="30">FASTAPI</text></g>
-      <g class="m"><rect x="113" y="10" width="51"  height="30" rx="6"/><text x="138.5" y="30">RAG</text></g>
-      <g class="c"><rect x="180" y="10" width="87"  height="30" rx="6"/><text x="223.5" y="30">NEXT.JS</text></g>
-      <g class="m"><rect x="283" y="10" width="114" height="30" rx="6"/><text x="340"   y="30">PYDANTICAI</text></g>
-      <g class="c"><rect x="413" y="10" width="114" height="30" rx="6"/><text x="470"   y="30">POSTGRESQL</text></g>
-      <g class="m"><rect x="543" y="10" width="78"  height="30" rx="6"/><text x="582"   y="30">DOCKER</text></g>
-      <g class="c"><rect x="637" y="10" width="78"  height="30" rx="6"/><text x="676"   y="30">PYTHON</text></g>
-      <g class="m"><rect x="731" y="10" width="114" height="30" rx="6"/><text x="788"   y="30">TYPESCRIPT</text></g>
+      <g><rect x="10"  y="14" width="94"  height="32" rx="16" fill="#0d1117" stroke="#39d353" stroke-width="1.2"/><text x="57"  y="35" fill="#39d353" font-family="'Courier New',monospace" font-size="13" font-weight="700" text-anchor="middle">FASTAPI</text></g>
+      <g><rect x="116" y="14" width="58"  height="32" rx="16" fill="#0d1117" stroke="#58a6ff" stroke-width="1.2"/><text x="145" y="35" fill="#58a6ff" font-family="'Courier New',monospace" font-size="13" font-weight="700" text-anchor="middle">RAG</text></g>
+      <g><rect x="186" y="14" width="94"  height="32" rx="16" fill="#0d1117" stroke="#bc8cff" stroke-width="1.2"/><text x="233" y="35" fill="#bc8cff" font-family="'Courier New',monospace" font-size="13" font-weight="700" text-anchor="middle">NEXT.JS</text></g>
+      <g><rect x="292" y="14" width="120" height="32" rx="16" fill="#0d1117" stroke="#39d353" stroke-width="1.2"/><text x="352" y="35" fill="#39d353" font-family="'Courier New',monospace" font-size="13" font-weight="700" text-anchor="middle">PYDANTICAI</text></g>
+      <g><rect x="424" y="14" width="120" height="32" rx="16" fill="#0d1117" stroke="#58a6ff" stroke-width="1.2"/><text x="484" y="35" fill="#58a6ff" font-family="'Courier New',monospace" font-size="13" font-weight="700" text-anchor="middle">POSTGRESQL</text></g>
+      <g><rect x="556" y="14" width="80"  height="32" rx="16" fill="#0d1117" stroke="#bc8cff" stroke-width="1.2"/><text x="596" y="35" fill="#bc8cff" font-family="'Courier New',monospace" font-size="13" font-weight="700" text-anchor="middle">DOCKER</text></g>
+      <g><rect x="648" y="14" width="80"  height="32" rx="16" fill="#0d1117" stroke="#39d353" stroke-width="1.2"/><text x="688" y="35" fill="#39d353" font-family="'Courier New',monospace" font-size="13" font-weight="700" text-anchor="middle">PYTHON</text></g>
+      <g><rect x="740" y="14" width="120" height="32" rx="16" fill="#0d1117" stroke="#58a6ff" stroke-width="1.2"/><text x="800" y="35" fill="#58a6ff" font-family="'Courier New',monospace" font-size="13" font-weight="700" text-anchor="middle">TYPESCRIPT</text></g>
     </g>
   </defs>
-  <style>
-    rect{fill:#0a0014;stroke-width:1.5}
-    text{font:700 14px 'Courier New',monospace;text-anchor:middle}
-    .c rect{stroke:#00f0ff}.c text{fill:#00f0ff}
-    .m rect{stroke:#ff2bd6}.m text{fill:#ff2bd6}
-    .run{animation:run 18s linear infinite}
-    @keyframes run{to{transform:translateX(-861px)}}
-  </style>
-  <g class="run">
+  <g>
     <use href="#set"/>
-    <use href="#set" x="861"/>
+    <use href="#set" x="870"/>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-870 0" dur="20s" repeatCount="indefinite"/>
   </g>
 </svg>
