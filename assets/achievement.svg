@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07000f"/>
+      <stop offset="1" stop-color="#1c0638"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip"><rect x="2" y="2" width="896" height="256" rx="14"/></clipPath>
+  </defs>
+  <style>
+    .t{font:800 54px 'Courier New',monospace;letter-spacing:4px}
+    .g0{fill:#fff}
+    .g1{fill:#ff2bd6;animation:j1 2.4s infinite}
+    .g2{fill:#00f0ff;animation:j2 2.4s infinite}
+    @keyframes j1{0%,90%,100%{transform:translate(-2px,0)}92%{transform:translate(-8px,2px)}95%{transform:translate(5px,-2px)}}
+    @keyframes j2{0%,90%,100%{transform:translate(2px,0)}92%{transform:translate(8px,-2px)}95%{transform:translate(-5px,2px)}}
+
+    .frame{fill:none;stroke:#00f0ff;stroke-width:2;stroke-dasharray:14 10;animation:dash 1.5s linear infinite}
+    @keyframes dash{to{stroke-dashoffset:-48}}
+
+    .scan{fill:#00f0ff;opacity:.08;animation:sc 3.5s linear infinite}
+    @keyframes sc{from{transform:translateY(-10px)}to{transform:translateY(270px)}}
+
+    .badge{transform-origin:780px 130px;animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+    .sub{font:700 18px 'Courier New',monospace;fill:#00f0ff}
+    .sub2{font:600 14px 'Courier New',monospace;fill:#ff2bd6}
+    .big{font:800 28px 'Courier New',monospace;fill:#fff;text-anchor:middle}
+    .small{font:700 13px 'Courier New',monospace;fill:#ff2bd6;text-anchor:middle}
+    .lbl{font:700 12px 'Courier New',monospace;fill:#00f0ff;letter-spacing:3px}
+  </style>
+
+  <rect width="900" height="260" rx="14" fill="url(#bg)"/>
+  <rect class="frame" x="6" y="6" width="888" height="248" rx="12" filter="url(#glow)"/>
+
+  <text class="lbl" x="40" y="48">// FEATURED ACHIEVEMENT</text>
+
+  <text class="t g1" x="40" y="110">GRAND FINALIST</text>
+  <text class="t g2" x="40" y="110">GRAND FINALIST</text>
+  <text class="t g0" x="40" y="110">GRAND FINALIST</text>
+
+  <text class="sub"  x="40" y="152">ALIBABA CLOUD AI HACKATHON PAKISTAN 2026</text>
+  <text class="sub2" x="40" y="182">ISLAMABAD  //  WATTWISE - AI ENERGY INTELLIGENCE</text>
+  <text class="sub2" x="40" y="210" style="fill:#ffe600">FASTAPI . NEXT.JS . ML FORECASTING . PYDANTICAI</text>
+
+  <g class="badge">
+    <circle cx="780" cy="130" r="68" fill="#0a0014" stroke="#ff2bd6" stroke-width="3" filter="url(#glow)"/>
+    <circle cx="780" cy="130" r="58" fill="none" stroke="#00f0ff" stroke-width="1" stroke-dasharray="4 6"/>
+    <text class="big"   x="780" y="128">TOP 300</text>
+    <text class="small" x="780" y="150">OF ~16,000</text>
+    <text class="small" x="780" y="167">PROJECTS</text>
+  </g>
+
+  <g clip-path="url(#clip)"><rect class="scan" width="900" height="8"/></g>
+</svg>
