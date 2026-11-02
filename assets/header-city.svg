@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0014"/>
+      <stop offset="1" stop-color="#2a0845"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .win { fill:#00f0ff; animation: blink 3s infinite; }
+    .win:nth-child(3n) { animation-delay:.8s; fill:#ff2bd6; }
+    .win:nth-child(5n) { animation-delay:1.6s; }
+    @keyframes blink { 0%,100%{opacity:.15} 50%{opacity:1} }
+    .title { font:700 34px monospace; fill:#00f0ff; filter:url(#glow);
+             animation: flick 4s infinite; }
+    @keyframes flick { 0%,92%,100%{opacity:1} 94%{opacity:.3} 96%{opacity:1} 98%{opacity:.5} }
+  </style>
+  <rect width="900" height="260" fill="url(#sky)"/>
+  <!-- buildings -->
+  <rect x="40"  y="110" width="90"  height="150" fill="#12002a"/>
+  <rect x="150" y="70"  width="70"  height="190" fill="#0d0022"/>
+  <rect x="240" y="130" width="110" height="130" fill="#12002a"/>
+  <!-- windows: bas ye lines copy karke positions badlo -->
+  <g>
+    <rect class="win" x="55"  y="125" width="8" height="8"/>
+    <rect class="win" x="75"  y="125" width="8" height="8"/>
+    <rect class="win" x="95"  y="145" width="8" height="8"/>
+    <rect class="win" x="165" y="90"  width="8" height="8"/>
+    <rect class="win" x="185" y="110" width="8" height="8"/>
+  </g>
+  <text x="450" y="60" text-anchor="middle" class="title">SYED TAHA MANZAR</text>
+</svg>
