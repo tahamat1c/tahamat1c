@@ -1,130 +1,127 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#05000d"/>
-      <stop offset=".6" stop-color="#1a0536"/>
+      <stop offset=".55" stop-color="#1a0536"/>
       <stop offset="1" stop-color="#4a0a5e"/>
     </linearGradient>
     <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffb000"/>
       <stop offset="1" stop-color="#ff2bd6"/>
     </linearGradient>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f0ff"/>
+      <stop offset=".5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ff2bd6"/>
+    </linearGradient>
     <pattern id="wc" width="14" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="6" height="7" fill="#00f0ff"/></pattern>
     <pattern id="wm" width="14" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="6" height="7" fill="#ff2bd6"/></pattern>
     <pattern id="wy" width="14" height="16" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="6" height="7" fill="#ffe600"/></pattern>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <style>
-    .star{fill:#fff;animation:tw 3s ease-in-out infinite}
-    .s2{animation-delay:1s}.s3{animation-delay:2s}
-    @keyframes tw{0%,100%{opacity:.2}50%{opacity:1}}
+  <!-- SKY -->
+  <rect width="900" height="340" fill="url(#sky)"/>
 
-    .b1{animation:bl 4s ease-in-out infinite}
-    .b2{animation:bl 5s ease-in-out infinite 1s}
-    .b3{animation:bl 3.5s ease-in-out infinite 2s}
-    @keyframes bl{0%,100%{opacity:.25}50%{opacity:1}}
+  <!-- STARS (native opacity animation) -->
+  <g fill="#fff">
+    <circle cx="60" cy="30" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="75" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="230" cy="25" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="2s" repeatCount="indefinite"/></circle>
+    <circle cx="330" cy="58" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin=".5s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="28" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="72" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="35" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin=".8s" repeatCount="indefinite"/></circle>
+    <circle cx="790" cy="60" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="25" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" begin="2.2s" repeatCount="indefinite"/></circle>
+  </g>
 
-    .car{animation:fly 9s linear infinite}
-    @keyframes fly{from{transform:translateX(-80px)}to{transform:translateX(980px)}}
+  <!-- RETRO SUN (behind name, subtle) -->
+  <circle cx="450" cy="205" r="70" fill="url(#sun)" opacity=".85"/>
+  <rect x="380" y="228" width="140" height="3" fill="#2a0845"/>
+  <rect x="380" y="240" width="140" height="4" fill="#2a0845"/>
+  <rect x="380" y="252" width="140" height="5" fill="#2a0845"/>
 
-    .tag{font:700 13px 'Courier New',monospace;fill:#00f0ff;filter:url(#glow);animation:drift 6s ease-in-out infinite}
-    .tm{fill:#ff2bd6}
-    @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-
-    .sign{font:800 12px 'Courier New',monospace;fill:#ff2bd6;filter:url(#glow);animation:fl 3s infinite}
-    @keyframes fl{0%,89%,100%{opacity:1}91%{opacity:.2}93%{opacity:1}95%{opacity:.3}}
-
-    .title{font:800 40px 'Courier New',monospace;letter-spacing:5px;text-anchor:middle}
-    .g0{fill:#fff}
-    .g1{fill:#ff2bd6;animation:j1 3s infinite}
-    .g2{fill:#00f0ff;animation:j2 3s infinite}
-    @keyframes j1{0%,90%,100%{transform:translate(-2px,0)}92%{transform:translate(-8px,2px)}95%{transform:translate(5px,-2px)}}
-    @keyframes j2{0%,90%,100%{transform:translate(2px,0)}92%{transform:translate(8px,-2px)}95%{transform:translate(-5px,2px)}}
-
-    .scan{fill:#00f0ff;opacity:.08;animation:sc 4s linear infinite}
-    @keyframes sc{from{transform:translateY(-10px)}to{transform:translateY(300px)}}
-  </style>
-
-  <!-- sky + stars -->
-  <rect width="900" height="300" fill="url(#sky)"/>
-  <circle class="star" cx="60" cy="30" r="1.2"/><circle class="star s2" cx="140" cy="75" r="1.2"/>
-  <circle class="star s3" cx="230" cy="25" r="1.2"/><circle class="star" cx="330" cy="58" r="1.2"/>
-  <circle class="star s2" cx="520" cy="28" r="1.2"/><circle class="star s3" cx="600" cy="72" r="1.2"/>
-  <circle class="star" cx="700" cy="35" r="1.2"/><circle class="star s2" cx="790" cy="60" r="1.2"/>
-  <circle class="star s3" cx="860" cy="25" r="1.2"/>
-
-  <!-- retro sun -->
-  <circle cx="450" cy="170" r="64" fill="url(#sun)" opacity=".9"/>
-  <rect x="380" y="196" width="140" height="3" fill="#2a0845"/>
-  <rect x="380" y="208" width="140" height="4" fill="#2a0845"/>
-  <rect x="380" y="220" width="140" height="5" fill="#2a0845"/>
-
-  <!-- far skyline -->
+  <!-- FAR SKYLINE -->
   <g fill="#14002b">
-    <rect x="0"   y="144" width="84" height="144"/>
-    <rect x="84"  y="112" width="70" height="176"/>
-    <rect x="154" y="160" width="98" height="128"/>
-    <rect x="252" y="96"  width="70" height="192"/>
-    <rect x="322" y="144" width="84" height="144"/>
-    <rect x="406" y="128" width="98" height="160"/>
-    <rect x="504" y="160" width="70" height="128"/>
-    <rect x="574" y="112" width="84" height="176"/>
-    <rect x="658" y="144" width="98" height="144"/>
-    <rect x="756" y="128" width="70" height="160"/>
-    <rect x="826" y="160" width="74" height="128"/>
+    <rect x="0"   y="184" width="84"  height="156"/>
+    <rect x="84"  y="152" width="70"  height="188"/>
+    <rect x="154" y="200" width="98"  height="140"/>
+    <rect x="252" y="136" width="70"  height="204"/>
+    <rect x="322" y="184" width="84"  height="156"/>
+    <rect x="406" y="168" width="98"  height="172"/>
+    <rect x="504" y="200" width="70"  height="140"/>
+    <rect x="574" y="152" width="84"  height="188"/>
+    <rect x="658" y="184" width="98"  height="156"/>
+    <rect x="756" y="168" width="70"  height="172"/>
+    <rect x="826" y="200" width="74"  height="140"/>
   </g>
 
-  <!-- near buildings -->
+  <!-- NEAR BUILDINGS (neon outline) -->
   <g fill="#0b0018" stroke-width="1.5">
-    <rect x="28"  y="176" width="70" height="112" stroke="#00f0ff"/>
-    <rect x="182" y="80"  width="84" height="208" stroke="#ff2bd6"/>
-    <rect x="350" y="64"  width="70" height="224" stroke="#00f0ff"/>
-    <rect x="462" y="144" width="98" height="144" stroke="#ff2bd6"/>
-    <rect x="616" y="96"  width="84" height="192" stroke="#00f0ff"/>
-    <rect x="770" y="160" width="70" height="128" stroke="#ff2bd6"/>
+    <rect x="28"  y="216" width="70" height="124" stroke="#00f0ff"/>
+    <rect x="182" y="120" width="84" height="220" stroke="#ff2bd6"/>
+    <rect x="350" y="104" width="70" height="236" stroke="#00f0ff"/>
+    <rect x="462" y="184" width="98" height="156" stroke="#ff2bd6"/>
+    <rect x="616" y="136" width="84" height="204" stroke="#00f0ff"/>
+    <rect x="770" y="200" width="70" height="140" stroke="#ff2bd6"/>
   </g>
 
-  <!-- blinking windows -->
-  <rect class="b1" x="28"  y="192" width="70" height="80"  fill="url(#wc)"/>
-  <rect class="b2" x="182" y="96"  width="84" height="176" fill="url(#wm)"/>
-  <rect class="b3" x="350" y="80"  width="70" height="192" fill="url(#wy)"/>
-  <rect class="b2" x="462" y="160" width="98" height="112" fill="url(#wc)"/>
-  <rect class="b1" x="616" y="112" width="84" height="160" fill="url(#wm)"/>
-  <rect class="b3" x="770" y="176" width="70" height="96"  fill="url(#wy)"/>
-
-  <!-- antennas -->
-  <line x1="224" y1="80" x2="224" y2="50" stroke="#ff2bd6" stroke-width="2"/>
-  <circle class="b1" cx="224" cy="48" r="3" fill="#ff2bd6" filter="url(#glow)"/>
-  <line x1="385" y1="64" x2="385" y2="36" stroke="#00f0ff" stroke-width="2"/>
-  <circle class="b2" cx="385" cy="34" r="3" fill="#00f0ff" filter="url(#glow)"/>
-
-  <!-- neon sign -->
-  <text class="sign" x="511" y="157" text-anchor="middle">WATTWISE</text>
-
-  <!-- flying car -->
-  <g class="car">
-    <rect x="-40" y="86" width="40" height="2" fill="#ffe600" opacity=".4"/>
-    <rect x="0" y="83" width="22" height="6" rx="3" fill="#ffe600" filter="url(#glow)"/>
+  <!-- WINDOWS (blinking) -->
+  <g>
+    <rect x="28"  y="232" width="70" height="80"  fill="url(#wc)"><animate attributeName="opacity" values=".25;1;.25" dur="4s" repeatCount="indefinite"/></rect>
+    <rect x="182" y="136" width="84" height="176" fill="url(#wm)"><animate attributeName="opacity" values=".25;1;.25" dur="5s" begin="1s" repeatCount="indefinite"/></rect>
+    <rect x="350" y="120" width="70" height="192" fill="url(#wy)"><animate attributeName="opacity" values=".25;1;.25" dur="3.5s" begin="2s" repeatCount="indefinite"/></rect>
+    <rect x="462" y="200" width="98" height="112" fill="url(#wc)"><animate attributeName="opacity" values=".25;1;.25" dur="5s" begin="1s" repeatCount="indefinite"/></rect>
+    <rect x="616" y="152" width="84" height="160" fill="url(#wm)"><animate attributeName="opacity" values=".25;1;.25" dur="4s" repeatCount="indefinite"/></rect>
+    <rect x="770" y="216" width="70" height="96"  fill="url(#wy)"><animate attributeName="opacity" values=".25;1;.25" dur="3.5s" begin="2s" repeatCount="indefinite"/></rect>
   </g>
 
-  <!-- floating tags -->
-  <text class="tag" x="40"  y="108">[ FastAPI ]</text>
-  <text class="tag tm" x="120" y="72" style="animation-delay:1s">[ RAG ]</text>
-  <text class="tag" x="560" y="92" style="animation-delay:2s">[ PydanticAI ]</text>
-  <text class="tag tm" x="720" y="112" style="animation-delay:.5s">[ Next.js ]</text>
-  <text class="tag" x="765" y="72" style="animation-delay:1.5s">[ PostgreSQL ]</text>
+  <!-- ANTENNAS -->
+  <line x1="224" y1="120" x2="224" y2="90" stroke="#ff2bd6" stroke-width="2"/>
+  <circle cx="224" cy="88" r="3" fill="#ff2bd6" filter="url(#glow)"><animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/></circle>
+  <line x1="385" y1="104" x2="385" y2="76" stroke="#00f0ff" stroke-width="2"/>
+  <circle cx="385" cy="74" r="3" fill="#00f0ff" filter="url(#glow)"><animate attributeName="opacity" values="1;.2;1" dur="2.5s" begin=".5s" repeatCount="indefinite"/></circle>
 
-  <!-- glitch title -->
-  <text class="title g1" x="450" y="50">SYED TAHA MANZAR</text>
-  <text class="title g2" x="450" y="50">SYED TAHA MANZAR</text>
-  <text class="title g0" x="450" y="50">SYED TAHA MANZAR</text>
+  <!-- WATTWISE NEON SIGN (building pe) -->
+  <text x="511" y="197" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" font-weight="800" fill="#ffe600" filter="url(#glow)" letter-spacing="1">WATTWISE</text>
 
-  <!-- ground + scanline -->
-  <rect y="288" width="900" height="12" fill="#0a0014"/>
-  <line x1="0" y1="288" x2="900" y2="288" stroke="#ff2bd6" stroke-width="2" filter="url(#glow)"/>
-  <rect class="scan" width="900" height="8"/>
+  <!-- FLYING CAR -->
+  <g>
+    <rect x="0" y="123" width="22" height="6" rx="3" fill="#ffe600" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" from="-80 0" to="980 0" dur="9s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- FLOATING TAGS -->
+  <g font-family="'Courier New',monospace" font-size="12" font-weight="700" fill="#00f0ff">
+    <text x="40" y="86" opacity=".9">[ FastAPI ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" repeatCount="indefinite"/></text>
+    <text x="140" y="70" fill="#ff2bd6" opacity=".9">[ RAG ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" begin="1s" repeatCount="indefinite"/></text>
+    <text x="560" y="70" opacity=".9">[ PydanticAI ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" begin="2s" repeatCount="indefinite"/></text>
+    <text x="700" y="86" fill="#ff2bd6" opacity=".9">[ Next.js ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" begin=".5s" repeatCount="indefinite"/></text>
+    <text x="790" y="70" text-anchor="end" opacity=".9">[ PostgreSQL ]<animateTransform attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="6s" begin="1.5s" repeatCount="indefinite"/></text>
+  </g>
+
+  <!-- NAME (gradient + subtle flicker, no layout shift) -->
+  <text x="450" y="72" text-anchor="middle" font-family="'Courier New',monospace" font-size="42" font-weight="800" letter-spacing="6" fill="url(#nameGrad)" filter="url(#glow)">
+    HEY, I'M SYED TAHA MANZAR
+  </text>
+
+  <!-- ROLE (typing-like via opacity sequence, safe) -->
+  <text x="450" y="110" text-anchor="middle" font-family="'Courier New',monospace" font-size="17" font-weight="700" fill="#00f0ff" letter-spacing="3">
+    ASPIRING FULL-STACK AI ENGINEER
+    <animate attributeName="opacity" values="1;1;.85;1" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- GROUND LINE -->
+  <rect y="328" width="900" height="12" fill="#0a0014"/>
+  <line x1="0" y1="328" x2="900" y2="328" stroke="#ff2bd6" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- SCANLINE (native translate) -->
+  <rect width="900" height="6" fill="#00f0ff" opacity=".06">
+    <animateTransform attributeName="transform" type="translate" from="0 -10" to="0 340" dur="4s" repeatCount="indefinite"/>
+  </rect>
 </svg>
